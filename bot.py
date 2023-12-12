@@ -48,13 +48,13 @@ def handle_message(message):
         bot.reply_to(message, f"На данный момент ему {info.age} лет.")
 
     elif 'хобби' in user_text or 'чем занимается Шерлок?' in user_text or 'hobbies' in user_text:
-        bot.reply_to(message, f'Наш детектив увлекается {info.hobbies}')
+        bot.reply_to(message, f'В число хобби Холмса входит: {info.hobbies[0]}, {info.hobbies[1]}, {info.hobbies[2]}.')
 
     elif 'интересы' in user_text or 'чем интерисуется?' in user_text:
-        bot.reply_to(message, f'Шерлоку Холмсу интересна {info.interests}')
+        bot.reply_to(message, f'Шерлоку Холмсу интересна {info.interests[0]} и {info.interests[1]}.')
 
     elif 'проекты' in user_text or 'работа' in user_text or 'над чем работает?' in user_text:
-        bot.reply_to(message, f'Сейчас он занят делом под названием {info.projects[0]} и {info.projects[1]}')
+        bot.reply_to(message, f'Сейчас он занят делом под названием {info.projects[0]} и {info.projects[1]}.')
 
     # Можно добавить ещё инфы по желанию
 
